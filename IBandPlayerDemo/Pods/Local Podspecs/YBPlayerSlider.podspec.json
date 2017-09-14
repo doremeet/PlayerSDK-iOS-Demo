@@ -1,6 +1,6 @@
 {
   "name": "YBPlayerSlider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "YBPlayerSlider is simple slider to use, it's include progress of the player and buffer option.",
   "description": "YBPlayerSlider is simple slider to use, it's include progress of the player and buffer option.\nYou welcome to try this one.",
   "homepage": "https://github.com/yogevbar/YBPlayerSlider",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/yogevbar/YBPlayerSlider.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "source_files": [
     "YBPlayerSlider",

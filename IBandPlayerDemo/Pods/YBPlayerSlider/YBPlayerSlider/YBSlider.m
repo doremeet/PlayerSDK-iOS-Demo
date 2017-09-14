@@ -136,7 +136,6 @@
         if (self.delegate && [self.delegate respondsToSelector:@selector(sliderDragMove:value:)]) {
             [self.delegate sliderDragMove:self value:self.currentPosition];
         }
-        NSLog(@"%f", self.currentPosition);
     }
 }
 
