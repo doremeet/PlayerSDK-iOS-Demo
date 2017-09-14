@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3D9B601772BA42A62BDF8BB0 /* Pods_IBandPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFC9CB2A409EEB8C2D27147 /* Pods_IBandPlayerDemo.framework */; };
+		DDBBFDC91F6A8AD5007C92B5 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDC51F6A8AD5007C92B5 /* PlayerViewController.m */; };
+		DDBBFDCA1F6A8AD5007C92B5 /* QualityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDC71F6A8AD5007C92B5 /* QualityCell.m */; };
+		DDBBFDCB1F6A8AD5007C92B5 /* QualityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBBFDC81F6A8AD5007C92B5 /* QualityCell.xib */; };
+		DDBBFDCE1F6A8D10007C92B5 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDCD1F6A8D10007C92B5 /* Entity.m */; };
+		DDBBFDD11F6A8D47007C92B5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDD01F6A8D47007C92B5 /* UIColor+Hex.m */; };
 		DDE7190F1F66B5F300DFE62C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE7190E1F66B5F300DFE62C /* main.m */; };
 		DDE719121F66B5F300DFE62C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE719111F66B5F300DFE62C /* AppDelegate.m */; };
-		DDE719151F66B5F300DFE62C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE719141F66B5F300DFE62C /* ViewController.m */; };
 		DDE719181F66B5F300DFE62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE719161F66B5F300DFE62C /* Main.storyboard */; };
 		DDE7191A1F66B5F300DFE62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE719191F66B5F300DFE62C /* Assets.xcassets */; };
 		DDE7191D1F66B5F300DFE62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE7191B1F66B5F300DFE62C /* LaunchScreen.storyboard */; };
@@ -20,12 +24,19 @@
 		2EFC9CB2A409EEB8C2D27147 /* Pods_IBandPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBandPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2C931F65A960F5664F154B /* Pods-IBandPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBandPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBandPlayerDemo/Pods-IBandPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D5DE288AD596746340AF7823 /* Pods-IBandPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBandPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBandPlayerDemo/Pods-IBandPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DDBBFDC41F6A8AD5007C92B5 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		DDBBFDC51F6A8AD5007C92B5 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		DDBBFDC61F6A8AD5007C92B5 /* QualityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityCell.h; sourceTree = "<group>"; };
+		DDBBFDC71F6A8AD5007C92B5 /* QualityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualityCell.m; sourceTree = "<group>"; };
+		DDBBFDC81F6A8AD5007C92B5 /* QualityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QualityCell.xib; sourceTree = "<group>"; };
+		DDBBFDCC1F6A8D10007C92B5 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		DDBBFDCD1F6A8D10007C92B5 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		DDBBFDCF1F6A8D47007C92B5 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		DDBBFDD01F6A8D47007C92B5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		DDE7190A1F66B5F300DFE62C /* IBandPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBandPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE7190E1F66B5F300DFE62C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DDE719101F66B5F300DFE62C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DDE719111F66B5F300DFE62C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DDE719131F66B5F300DFE62C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DDE719141F66B5F300DFE62C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DDE719171F66B5F300DFE62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDE719191F66B5F300DFE62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDE7191C1F66B5F300DFE62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,9 +95,16 @@
 			children = (
 				DDE719101F66B5F300DFE62C /* AppDelegate.h */,
 				DDE719111F66B5F300DFE62C /* AppDelegate.m */,
-				DDE719131F66B5F300DFE62C /* ViewController.h */,
-				DDE719141F66B5F300DFE62C /* ViewController.m */,
 				DDE719161F66B5F300DFE62C /* Main.storyboard */,
+				DDBBFDC41F6A8AD5007C92B5 /* PlayerViewController.h */,
+				DDBBFDC51F6A8AD5007C92B5 /* PlayerViewController.m */,
+				DDBBFDC61F6A8AD5007C92B5 /* QualityCell.h */,
+				DDBBFDC71F6A8AD5007C92B5 /* QualityCell.m */,
+				DDBBFDCC1F6A8D10007C92B5 /* Entity.h */,
+				DDBBFDCD1F6A8D10007C92B5 /* Entity.m */,
+				DDBBFDCF1F6A8D47007C92B5 /* UIColor+Hex.h */,
+				DDBBFDD01F6A8D47007C92B5 /* UIColor+Hex.m */,
+				DDBBFDC81F6A8AD5007C92B5 /* QualityCell.xib */,
 				DDE719191F66B5F300DFE62C /* Assets.xcassets */,
 				DDE7191B1F66B5F300DFE62C /* LaunchScreen.storyboard */,
 				DDE7191E1F66B5F300DFE62C /* Info.plist */,
@@ -166,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDE7191D1F66B5F300DFE62C /* LaunchScreen.storyboard in Resources */,
+				DDBBFDCB1F6A8AD5007C92B5 /* QualityCell.xib in Resources */,
 				DDE7191A1F66B5F300DFE62C /* Assets.xcassets in Resources */,
 				DDE719181F66B5F300DFE62C /* Main.storyboard in Resources */,
 			);
@@ -196,11 +215,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IBandPlayerDemo/Pods-IBandPlayerDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework",
 				"${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/IBandPlayerSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/YBPlayerSlider/YBPlayerSlider.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBandPlayerSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBPlayerSlider.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -232,7 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDE719151F66B5F300DFE62C /* ViewController.m in Sources */,
+				DDBBFDCE1F6A8D10007C92B5 /* Entity.m in Sources */,
+				DDBBFDD11F6A8D47007C92B5 /* UIColor+Hex.m in Sources */,
+				DDBBFDCA1F6A8AD5007C92B5 /* QualityCell.m in Sources */,
+				DDBBFDC91F6A8AD5007C92B5 /* PlayerViewController.m in Sources */,
 				DDE719121F66B5F300DFE62C /* AppDelegate.m in Sources */,
 				DDE7190F1F66B5F300DFE62C /* main.m in Sources */,
 			);
@@ -397,6 +425,7 @@
 				DDE719231F66B5F300DFE62C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,21 +1,35 @@
 PODS:
+  - DGActivityIndicatorView (2.1.1)
   - IBandPlayerSDK (0.0.1)
+  - Masonry (1.0.2)
+  - YBPlayerSlider (1.0.0)
 
 DEPENDENCIES:
+  - DGActivityIndicatorView
   - IBandPlayerSDK (from `https://github.com/doremeet/PlayerSDK-Pod.git`)
+  - Masonry
+  - YBPlayerSlider (from `https://github.com/yogevbar/YBPlayerSlider.git`)
 
 EXTERNAL SOURCES:
   IBandPlayerSDK:
     :git: https://github.com/doremeet/PlayerSDK-Pod.git
+  YBPlayerSlider:
+    :git: https://github.com/yogevbar/YBPlayerSlider.git
 
 CHECKOUT OPTIONS:
   IBandPlayerSDK:
     :commit: f69e166bd10abfd5625b879d871f7f0038b61e9f
     :git: https://github.com/doremeet/PlayerSDK-Pod.git
+  YBPlayerSlider:
+    :commit: 01fd8702c1835f709b16a027d9632411bf26db5d
+    :git: https://github.com/yogevbar/YBPlayerSlider.git
 
 SPEC CHECKSUMS:
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   IBandPlayerSDK: 815c0bcdb3c3821d4b1a3b8848340e5b22ea3e46
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  YBPlayerSlider: e97e5bb152732d0472ebcc929dfb8c04601b5dbf
 
-PODFILE CHECKSUM: 7a0e86d6211000ffb8e4bd8f0c4b7c3e050d1225
+PODFILE CHECKSUM: c422904f18d6fc8cdd888be4573ab3956d53a589
 
 COCOAPODS: 1.3.0.beta.3

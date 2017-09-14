@@ -1,0 +1,6 @@
+framework module YBPlayerSlider {
+  umbrella header "YBPlayerSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}

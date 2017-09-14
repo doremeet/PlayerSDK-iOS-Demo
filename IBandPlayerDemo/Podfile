@@ -7,5 +7,7 @@ target 'IBandPlayerDemo' do
 
   # Pods for IBandPlayerDemo
   pod 'IBandPlayerSDK', :git => 'https://github.com/doremeet/PlayerSDK-Pod.git'
-
+  pod 'DGActivityIndicatorView'
+  pod 'YBPlayerSlider', :git => 'https://github.com/yogevbar/YBPlayerSlider.git'
+  pod 'Masonry'
 end

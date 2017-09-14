@@ -1,9 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/DGActivityIndicatorView" "$PODS_CONFIGURATION_BUILD_DIR/Masonry" "$PODS_CONFIGURATION_BUILD_DIR/YBPlayerSlider" "${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/IBandPlayerSDK"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited)  -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/IBandPlayerSDK"
-OTHER_LDFLAGS = $(inherited) -l"c++" -framework "AVFoundation" -framework "AudioToolbox" -framework "GLKit" -framework "IBandPlayerSDK" -framework "OpenGLES" -framework "SystemConfiguration" -framework "UIKit" -framework "coreGraphics" -framework "coreMedia" -framework "coreMotion"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/DGActivityIndicatorView/DGActivityIndicatorView.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Masonry/Masonry.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/YBPlayerSlider/YBPlayerSlider.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/IBandPlayerSDK"
+OTHER_LDFLAGS = $(inherited) -l"c++" -framework "AVFoundation" -framework "AudioToolbox" -framework "DGActivityIndicatorView" -framework "GLKit" -framework "IBandPlayerSDK" -framework "Masonry" -framework "OpenGLES" -framework "SystemConfiguration" -framework "UIKit" -framework "YBPlayerSlider" -framework "coreGraphics" -framework "coreMedia" -framework "coreMotion"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
