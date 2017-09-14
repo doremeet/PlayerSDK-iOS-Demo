@@ -199,9 +199,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IBandPlayerDemo/Pods-IBandPlayerDemo-resources.sh",
+				"${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/Resources/Shader.fsh",
+				"${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/Resources/Shader.vsh",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -218,6 +222,7 @@
 				"${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework",
 				"${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/IBandPlayerSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-9/iOS/RevealServer.framework",
 				"${BUILT_PRODUCTS_DIR}/YBPlayerSlider/YBPlayerSlider.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -225,6 +230,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBandPlayerSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBPlayerSlider.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

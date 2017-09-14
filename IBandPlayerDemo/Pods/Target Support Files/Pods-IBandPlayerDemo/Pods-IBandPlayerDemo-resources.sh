@@ -83,6 +83,14 @@ EOM
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/Resources/Shader.fsh"
+  install_resource "${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/Resources/Shader.vsh"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/Resources/Shader.fsh"
+  install_resource "${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/Resources/Shader.vsh"
+fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync --delete -avr --copy-links --no-relative "${RSYNC_PROTECT_TMP_FILES[@]}" --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

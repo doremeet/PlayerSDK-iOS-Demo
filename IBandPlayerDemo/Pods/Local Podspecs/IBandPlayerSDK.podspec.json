@@ -1,6 +1,6 @@
 {
   "name": "IBandPlayerSDK",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "iOS library to play streams from IBand",
   "homepage": "http://www.iband.io",
   "authors": {
@@ -10,10 +10,10 @@
     "ios": "8.0"
   },
   "source": {
-    "git": "https://github.com/doremeet/PlayerSDK-Pod.git",
-    "tag": "0.0.1"
+    "http": "https://s3.eu-central-1.amazonaws.com/iband-io/IBandPlayerPod/IBandPlayerSDK.zip"
   },
   "vendored_frameworks": "IBandPlayerSDK/IBandPlayerSDK.framework",
+  "resources": "IBandPlayerSDK/Resources/Shader.{fsh,vsh}",
   "frameworks": [
     "UIKit",
     "SystemConfiguration",

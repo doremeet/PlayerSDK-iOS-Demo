@@ -105,6 +105,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework"
   install_framework "${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/IBandPlayerSDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+  install_framework "${PODS_ROOT}/Reveal-SDK/RevealServer-9/iOS/RevealServer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YBPlayerSlider/YBPlayerSlider.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then

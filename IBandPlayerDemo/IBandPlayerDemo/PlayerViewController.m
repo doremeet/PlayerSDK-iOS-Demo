@@ -16,10 +16,9 @@
 #import "QualityCell.h"
 
 @interface PlayerViewController () <IBandPlayerDelegate, IBandStreamDelegate, YBSliderDelegate, QualityCellDelegate>
-@property (nonatomic, strong) Entity *entity;
 @property (nonatomic, strong) IBandSDK *ibandSDK;
 @property (nonatomic, strong) IBandPlayer *player;
-@property (nonatomic, strong) NSArray<IBandStream*> *streams;
+@property (nonatomic, strong) IBandStream *stream;
 @property (nonatomic, strong) IBandPlayerView *playerView;
 @property (nonatomic, assign) NSInteger currentStreamIndex;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
@@ -63,18 +62,6 @@
     return UIInterfaceOrientationMaskLandscape;
 }
 
-
-- (instancetype)initWithEntity:(Entity*)entity
-{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    self = [storyboard instantiateViewControllerWithIdentifier:@"player"];
-    
-    if(self){
-        self.entity = entity;
-    }
-    return self;
-}
-
 -(void)dealloc{
     [self stopTimer];
     [self stopMenuTimer];
@@ -86,17 +73,14 @@
     [UIApplication sharedApplication].idleTimerDisabled = YES;
     
     self.ibandSDK = [[IBandSDK alloc] initWithToken:@"5Dpf3hEbvuLdXBQs8hK9vjEJEdai8GaGDqne5CkomFXzczBFgopBMts"];
-    if (!self.entity || !self.entity.streams || self.entity.streams.count == 0) {
-        return;
-    }
     
-    NSMutableArray<IBandStream*> *streams = [NSMutableArray array];
-    for (NSString *streamId in self.entity.streams) {
-        IBandStream *stream = [self.ibandSDK createStream:streamId];
-        stream.delegate = self;
-        [streams addObject:stream];
-    }
-    self.streams = streams;
+    //Equirectangular Stream Id:
+    IBandStream *stream = [self.ibandSDK createStream:@"5994219bbc454f6edf961315"];
+    
+    //Plain Stream Id:
+//    IBandStream *stream = [self.ibandSDK createStream:@"59942149bc454f6edf961311"];
+    stream.delegate = self;
+    self.stream = stream;
     self.currentStreamIndex = 0;
     
     [self setupPlayer];
@@ -107,16 +91,13 @@
     [super viewWillDisappear:animated];
     [self stopTimer];
     [self stopMenuTimer];
-    for (IBandStream *stream in self.streams) {
-        [stream releaseStream];
-    }
+    [self.stream releaseStream];
     [self.player releasePlayer];
     self.player = nil;
     [UIApplication sharedApplication].idleTimerDisabled = NO;
 }
 
 -(void)setupView{
-    
     self.slider.delegate = self;
     UITapGestureRecognizer *tapOnScreen = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleMenu)];
     [self.view addGestureRecognizer:tapOnScreen];
@@ -185,7 +166,7 @@
     self.playerView = [[IBandPlayerView alloc] init];
     [self setupPlayerView];
     [self.player setView:self.playerView];
-    [self.player setStream:self.streams[self.currentStreamIndex]];
+    [self.player setStream:self.stream];
 }
 
 -(void)setupPlayerView{
@@ -203,7 +184,6 @@
 
 -(void)onPlayerStateChanged:(IBandPlayer *)player state:(IBandPlayerState)state oldState:(IBandPlayerState)oldState{
     switch (state) {
-            
         case IBandPlayerStateReady:
             [self stopLoadingAnimation];
             self.lblDuration.text = [self getTimeInForamt:[self.player getDuration]];
@@ -217,7 +197,6 @@
         case IBandPlayerStateInitialize:
             break;
     }
-//    NSLog(@"onStateChanged");
 }
 
 -(void) onPlayerPlayableChanged:(IBandPlayer*) player isPlayable:(BOOL) isPlayable{
@@ -227,14 +206,12 @@
 }
 
 -(void) onPlayerReachEnd:(IBandPlayer*) player{
-//    NSLog(@"onReachEnd");
     self.btnPlayPause.selected = false;
     [self.player setPlayWhenReady:false];
     [self stopTimer];
 }
 
 -(void) onPlayerVariantsCreated:(IBandPlayer*) player variants:(NSArray<IBandPlayerVariant>*) variants{
-//    NSLog(@"onVariantsCreated");
     self.variants = variants;
     [self setupQualities];
 }
@@ -242,8 +219,6 @@
 -(void) onPlayerCurrentVariantChanged:(IBandPlayer*)player variantIndex:(NSUInteger)variantIndex oldVariantIndex:(NSUInteger)oldVariantIndex{
     
     [self setQualitiesUnactive];
-    
-    NSLog(@"%dp", (int)[self.variants[variantIndex] getHeight]);
     
     NSArray<QualityCell*> *cells = (NSArray<QualityCell *> *)[[self.qualitiesStackView.subviews reverseObjectEnumerator] allObjects];
     if (variantIndex <= cells.count) {
@@ -253,9 +228,7 @@
 }
 
 -(void) onPlayerError:(IBandPlayer*) player error:(IBandError*) error{
-    NSLog(@"onError");
     [self showErrorMessage:error];
-    [self stopLoadingAnimation];
 }
 
 -(void)onPlayerCurrentPositionUpdate:(IBandPlayer *)player currentPosition:(NSTimeInterval)currentPosition{
@@ -274,14 +247,12 @@
 #pragma mark - IBandStreamDelegate
 -(void) onStreamStateChanged:(IBandStream*)stream state:(IBandStreamState)state oldState:(IBandStreamState)oldState{
     [self updateView];
-    if ([[stream getId] isEqualToString:[self.streams[self.currentStreamIndex] getId]] &&  state == IBandStreamStateClosed) {
+    if ([[stream getId] isEqualToString:[self.stream getId]] &&  state == IBandStreamStateClosed) {
         [self stopLoadingAnimation];
         self.btnPlayPause.hidden = true;
     }
 }
 -(void) onStreamError:(IBandStream*)stream error:(IBandError*)error{
-    NSLog(@"onStreamError");
-    [self stopLoadingAnimation];
     [self showErrorMessage:error];
 }
 
@@ -310,8 +281,7 @@
 
 -(void)switchVrMode{
     [self closeMenu];
-    IBandStream *currentStream = self.streams[self.currentStreamIndex];
-    if ([currentStream getStructure] == IBandStreamStructureEquirectangular) {
+    if ([self.stream getStructure] == IBandStreamStructureEquirectangular) {
         [self.playerView setVRMode:self.btnVr.selected];
     }
 
@@ -319,12 +289,13 @@
         self.angleCenterView.hidden = true;
         self.angleView.hidden = true;
         self.iconLogo.hidden = true;
+        self.backButton.hidden = false;
     }else{
         self.angleCenterView.hidden = false;
         self.angleView.hidden = false;
         self.iconLogo.hidden = false;
+        self.backButton.hidden = true;
     }
-    self.backButton.hidden = false;
 }
 
 - (void)btnCenterPressed:(UIGestureRecognizer *)sender {
@@ -375,10 +346,8 @@
 #pragma mark - Slider
 - (void) updateSlider:(NSTimer *)timer
 {
-//    NSLog(@"current position: %f", [self.player getCurrentPosition]/[self.player getDuration]);
     [self.slider setCurrentPosition:[self.player getCurrentPosition]/[self.player getDuration]];
     self.lblCurrentPosition.text = [self getTimeInForamt:[self.player getCurrentPosition]];
-//    NSLog(@"current buffer: %f", [self.player getBufferPosition] / [self.player getDuration]);
     [self.slider setBufferPosition:[self.player getBufferPosition] / [self.player getDuration]];
 }
 
@@ -395,7 +364,7 @@
 #pragma mark - Angle marker
 -(void) startTimer{
     [self stopTimer];
-    if ([self.streams[self.currentStreamIndex] getStructure] == IBandStreamStructureEquirectangular) {
+    if ([self.stream getStructure] == IBandStreamStructureEquirectangular) {
         self.angleTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(getPanoramaPositionAngle) userInfo:nil repeats:true];
     }
 }
@@ -478,9 +447,8 @@
     }
     
     self.isMenuOpen = true;
-    IBandStream *currentStream = self.streams[self.currentStreamIndex];
     
-    if ([currentStream getStructure] == IBandStreamStructureEquirectangular) {
+    if ([self.stream getStructure] == IBandStreamStructureEquirectangular) {
         self.btnVr.hidden = false;
         self.angleView.hidden = false;
         self.angleCenterView.hidden = false;
@@ -492,7 +460,7 @@
         self.btnScale.hidden = false;
     }
     
-    if ([currentStream getType] == IBandStreamTypeLive) {
+    if ([self.stream getType] == IBandStreamTypeLive) {
         self.liveIcon.hidden = false;
         self.lblDuration.hidden = true;
         self.lblCurrentPosition.hidden = true;
@@ -504,7 +472,7 @@
         self.slider.hidden = false;
     }
     
-    if ([currentStream getState] == IBandStreamStateClosed) {
+    if ([self.stream getState] == IBandStreamStateClosed) {
         [self stopLoadingAnimation];
         self.cameraNotAvailable.view.hidden = false;
         self.liveIcon.hidden = true;
@@ -533,7 +501,7 @@
     self.angleView.alpha = 1.0;
     
     self.shadowMenuView.hidden = false;
-    self.backButton.hidden = false;
+    self.backButton.hidden = true;
     [self startMenuTimer];
 }
 
@@ -572,6 +540,7 @@
 }
 
 -(void)showErrorMessage:(IBandError*)error{
+    [self stopLoadingAnimation];
     UIAlertController * alert = [UIAlertController
                                  alertControllerWithTitle:@"Error"
                                  message:[error getErrorMessage]

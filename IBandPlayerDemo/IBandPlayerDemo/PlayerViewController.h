@@ -10,7 +10,5 @@
 @class Entity;
 
 @interface PlayerViewController : UIViewController
-
-- (instancetype)initWithEntity:(Entity*)entity;
 @end
 
