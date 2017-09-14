@@ -10,5 +10,4 @@ target 'IBandPlayerDemo' do
   pod 'DGActivityIndicatorView'
   pod 'YBPlayerSlider', :git => 'https://github.com/yogevbar/YBPlayerSlider.git'
   pod 'Masonry'
-  pod 'Reveal-SDK', :configurations => ['Debug']
 end
