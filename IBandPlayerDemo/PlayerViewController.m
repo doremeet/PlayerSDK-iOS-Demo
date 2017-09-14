@@ -15,6 +15,8 @@
 #import "YBPlayerSlider.h"
 #import "QualityCell.h"
 
+#define STREAM_ID @"your stream id here"
+
 @interface PlayerViewController () <IBandPlayerDelegate, IBandStreamDelegate, YBSliderDelegate, QualityCellDelegate>
 @property (nonatomic, strong) IBandSDK *ibandSDK;
 @property (nonatomic, strong) IBandPlayer *player;
@@ -72,13 +74,10 @@
     
     [UIApplication sharedApplication].idleTimerDisabled = YES;
     
-    self.ibandSDK = [[IBandSDK alloc] initWithToken:@"5Dpf3hEbvuLdXBQs8hK9vjEJEdai8GaGDqne5CkomFXzczBFgopBMts"];
-    
-    //Equirectangular Stream Id:
-    IBandStream *stream = [self.ibandSDK createStream:@"5994219bbc454f6edf961315"];
-    
-    //Plain Stream Id:
-//    IBandStream *stream = [self.ibandSDK createStream:@"59942149bc454f6edf961311"];
+    self.ibandSDK = [[IBandSDK alloc] init];
+
+    IBandStream *stream = [self.ibandSDK createStream:STREAM_ID];
+
     stream.delegate = self;
     self.stream = stream;
     self.currentStreamIndex = 0;
