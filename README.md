@@ -12,10 +12,14 @@ Demo player with IBandSDK player for iOS.
 Use the [CocoaPods](http://github.com/CocoaPods/CocoaPods).
 
 In your Podfile
->`pod 'IBandPlayerSDK', :git => 'https://github.com/doremeet/PlayerSDK-Pod.git'`
+```ruby
+pod 'IBandPlayerSDK', :git => 'https://github.com/doremeet/PlayerSDK-Pod.git'
+```
 
 In your project us
->`#import <IBandPlayerSDK/IBandPlayerSDK.h>`
+```objective-c
+#import <IBandPlayerSDK/IBandPlayerSDK.h>
+```
 
 ## Documation
 
