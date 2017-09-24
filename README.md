@@ -3,9 +3,9 @@ Demo player with IBandSDK player for iOS.
 
 ## How to Use
 
-**Token** Go to info.plist and put the demo token into "IBandToken" key.
+**Token** Go to `info.plist` and put the demo token into `"IBandToken"` key.
 
-**StreamId** Go to PlayerViewController class and put the demo StreamId into STREAM_ID
+**StreamId** Go to `PlayerViewController` class and put the demo `StreamId` into `STREAM_ID`
 
 
 ## Installation
