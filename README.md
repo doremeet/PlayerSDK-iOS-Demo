@@ -8,8 +8,6 @@ Demo player with IBandSDK player for iOS.
 **StreamId** Go to PlayerViewController class and put the demo StreamId into STREAM_ID
 
 
-## Getting Started
-
 ## Installation
 Use the [CocoaPods](http://github.com/CocoaPods/CocoaPods).
 
@@ -18,3 +16,7 @@ In your Podfile
 
 In your project us
 >`#import <IBandPlayerSDK/IBandPlayerSDK.h>`
+
+## Documation
+
+[headerdocs](https://doremeet.github.io/PlayerSDK-iOS/)
