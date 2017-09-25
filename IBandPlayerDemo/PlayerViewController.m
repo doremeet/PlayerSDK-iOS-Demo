@@ -15,7 +15,7 @@
 #import "YBPlayerSlider.h"
 #import "QualityCell.h"
 
-#define STREAM_ID @"your stream id here"
+#define STREAM_ID @"5994219bbc454f6edf961315"
 
 @interface PlayerViewController () <IBandPlayerDelegate, IBandStreamDelegate, YBSliderDelegate, QualityCellDelegate>
 @property (nonatomic, strong) IBandSDK *ibandSDK;
