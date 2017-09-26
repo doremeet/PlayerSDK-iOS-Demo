@@ -11,7 +11,6 @@
 		DDBBFDC91F6A8AD5007C92B5 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDC51F6A8AD5007C92B5 /* PlayerViewController.m */; };
 		DDBBFDCA1F6A8AD5007C92B5 /* QualityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDC71F6A8AD5007C92B5 /* QualityCell.m */; };
 		DDBBFDCB1F6A8AD5007C92B5 /* QualityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBBFDC81F6A8AD5007C92B5 /* QualityCell.xib */; };
-		DDBBFDCE1F6A8D10007C92B5 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDCD1F6A8D10007C92B5 /* Entity.m */; };
 		DDBBFDD11F6A8D47007C92B5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDD01F6A8D47007C92B5 /* UIColor+Hex.m */; };
 		DDE7190F1F66B5F300DFE62C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE7190E1F66B5F300DFE62C /* main.m */; };
 		DDE719121F66B5F300DFE62C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE719111F66B5F300DFE62C /* AppDelegate.m */; };
@@ -29,8 +28,6 @@
 		DDBBFDC61F6A8AD5007C92B5 /* QualityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityCell.h; sourceTree = "<group>"; };
 		DDBBFDC71F6A8AD5007C92B5 /* QualityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualityCell.m; sourceTree = "<group>"; };
 		DDBBFDC81F6A8AD5007C92B5 /* QualityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QualityCell.xib; sourceTree = "<group>"; };
-		DDBBFDCC1F6A8D10007C92B5 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
-		DDBBFDCD1F6A8D10007C92B5 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 		DDBBFDCF1F6A8D47007C92B5 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		DDBBFDD01F6A8D47007C92B5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		DDE7190A1F66B5F300DFE62C /* IBandPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBandPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,8 +97,6 @@
 				DDBBFDC51F6A8AD5007C92B5 /* PlayerViewController.m */,
 				DDBBFDC61F6A8AD5007C92B5 /* QualityCell.h */,
 				DDBBFDC71F6A8AD5007C92B5 /* QualityCell.m */,
-				DDBBFDCC1F6A8D10007C92B5 /* Entity.h */,
-				DDBBFDCD1F6A8D10007C92B5 /* Entity.m */,
 				DDBBFDCF1F6A8D47007C92B5 /* UIColor+Hex.h */,
 				DDBBFDD01F6A8D47007C92B5 /* UIColor+Hex.m */,
 				DDBBFDC81F6A8AD5007C92B5 /* QualityCell.xib */,
@@ -255,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDBBFDCE1F6A8D10007C92B5 /* Entity.m in Sources */,
 				DDBBFDD11F6A8D47007C92B5 /* UIColor+Hex.m in Sources */,
 				DDBBFDCA1F6A8AD5007C92B5 /* QualityCell.m in Sources */,
 				DDBBFDC91F6A8AD5007C92B5 /* PlayerViewController.m in Sources */,

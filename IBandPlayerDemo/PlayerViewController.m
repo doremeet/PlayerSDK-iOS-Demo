@@ -8,14 +8,13 @@
 
 #import <IBandPlayerSDK/IBandPlayerSDK.h>
 #import "PlayerViewController.h"
-#import "Entity.h"
 #import "Masonry.h"
 #import "DGActivityIndicatorView.h"
 #import "UIColor+Hex.h"
 #import "YBPlayerSlider.h"
 #import "QualityCell.h"
 
-#define STREAM_ID @"5994219bbc454f6edf961315"
+#define STREAM_ID <#string - stream id#>
 
 @interface PlayerViewController () <IBandPlayerDelegate, IBandStreamDelegate, YBSliderDelegate, QualityCellDelegate>
 @property (nonatomic, strong) IBandSDK *ibandSDK;
