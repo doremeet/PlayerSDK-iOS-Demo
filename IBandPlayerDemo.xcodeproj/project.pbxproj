@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03EBD31D342DC12027347FC9 /* libPods-IBandPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 690193458B705ADC0F5EB64D /* libPods-IBandPlayerDemo.a */; };
+		DDBBFDC91F6A8AD5007C92B5 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDC51F6A8AD5007C92B5 /* PlayerViewController.m */; };
+		DDBBFDCA1F6A8AD5007C92B5 /* QualityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDC71F6A8AD5007C92B5 /* QualityCell.m */; };
+		DDBBFDCB1F6A8AD5007C92B5 /* QualityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBBFDC81F6A8AD5007C92B5 /* QualityCell.xib */; };
+		DDBBFDD11F6A8D47007C92B5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFDD01F6A8D47007C92B5 /* UIColor+Hex.m */; };
+		DDE7190F1F66B5F300DFE62C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE7190E1F66B5F300DFE62C /* main.m */; };
+		DDE719121F66B5F300DFE62C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE719111F66B5F300DFE62C /* AppDelegate.m */; };
+		DDE719181F66B5F300DFE62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE719161F66B5F300DFE62C /* Main.storyboard */; };
+		DDE7191A1F66B5F300DFE62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE719191F66B5F300DFE62C /* Assets.xcassets */; };
+		DDE7191D1F66B5F300DFE62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE7191B1F66B5F300DFE62C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		690193458B705ADC0F5EB64D /* libPods-IBandPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IBandPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C2C931F65A960F5664F154B /* Pods-IBandPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBandPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBandPlayerDemo/Pods-IBandPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D5DE288AD596746340AF7823 /* Pods-IBandPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBandPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBandPlayerDemo/Pods-IBandPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DDBBFDC41F6A8AD5007C92B5 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		DDBBFDC51F6A8AD5007C92B5 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		DDBBFDC61F6A8AD5007C92B5 /* QualityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityCell.h; sourceTree = "<group>"; };
+		DDBBFDC71F6A8AD5007C92B5 /* QualityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualityCell.m; sourceTree = "<group>"; };
+		DDBBFDC81F6A8AD5007C92B5 /* QualityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QualityCell.xib; sourceTree = "<group>"; };
+		DDBBFDCF1F6A8D47007C92B5 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		DDBBFDD01F6A8D47007C92B5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		DDE7190A1F66B5F300DFE62C /* IBandPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBandPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE7190E1F66B5F300DFE62C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDE719101F66B5F300DFE62C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDE719111F66B5F300DFE62C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDE719171F66B5F300DFE62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDE719191F66B5F300DFE62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDE7191C1F66B5F300DFE62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDE7191E1F66B5F300DFE62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDE719071F66B5F300DFE62C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EBD31D342DC12027347FC9 /* libPods-IBandPlayerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		111CBEB9EB1827412C3FBFE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C2C931F65A960F5664F154B /* Pods-IBandPlayerDemo.debug.xcconfig */,
+				D5DE288AD596746340AF7823 /* Pods-IBandPlayerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92272EAFFACBAE4A68761F85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				690193458B705ADC0F5EB64D /* libPods-IBandPlayerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDE719011F66B5F300DFE62C = {
+			isa = PBXGroup;
+			children = (
+				DDE7190C1F66B5F300DFE62C /* IBandPlayerDemo */,
+				DDE7190B1F66B5F300DFE62C /* Products */,
+				111CBEB9EB1827412C3FBFE7 /* Pods */,
+				92272EAFFACBAE4A68761F85 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DDE7190B1F66B5F300DFE62C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDE7190A1F66B5F300DFE62C /* IBandPlayerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDE7190C1F66B5F300DFE62C /* IBandPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DDE719101F66B5F300DFE62C /* AppDelegate.h */,
+				DDE719111F66B5F300DFE62C /* AppDelegate.m */,
+				DDE719161F66B5F300DFE62C /* Main.storyboard */,
+				DDBBFDC41F6A8AD5007C92B5 /* PlayerViewController.h */,
+				DDBBFDC51F6A8AD5007C92B5 /* PlayerViewController.m */,
+				DDBBFDC61F6A8AD5007C92B5 /* QualityCell.h */,
+				DDBBFDC71F6A8AD5007C92B5 /* QualityCell.m */,
+				DDBBFDCF1F6A8D47007C92B5 /* UIColor+Hex.h */,
+				DDBBFDD01F6A8D47007C92B5 /* UIColor+Hex.m */,
+				DDBBFDC81F6A8AD5007C92B5 /* QualityCell.xib */,
+				DDE719191F66B5F300DFE62C /* Assets.xcassets */,
+				DDE7191B1F66B5F300DFE62C /* LaunchScreen.storyboard */,
+				DDE7191E1F66B5F300DFE62C /* Info.plist */,
+				DDE7190D1F66B5F300DFE62C /* Supporting Files */,
+			);
+			path = IBandPlayerDemo;
+			sourceTree = "<group>";
+		};
+		DDE7190D1F66B5F300DFE62C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDE7190E1F66B5F300DFE62C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDE719091F66B5F300DFE62C /* IBandPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE719211F66B5F300DFE62C /* Build configuration list for PBXNativeTarget "IBandPlayerDemo" */;
+			buildPhases = (
+				DF600AABF143FF4414A1AC5F /* [CP] Check Pods Manifest.lock */,
+				DDE719061F66B5F300DFE62C /* Sources */,
+				DDE719071F66B5F300DFE62C /* Frameworks */,
+				DDE719081F66B5F300DFE62C /* Resources */,
+				D4E6335275EB8265F3F31C71 /* [CP] Embed Pods Frameworks */,
+				8C2F05A713F1D58F0867A57E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBandPlayerDemo;
+			productName = IBandPlayerDemo;
+			productReference = DDE7190A1F66B5F300DFE62C /* IBandPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDE719021F66B5F300DFE62C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = IBand;
+				TargetAttributes = {
+					DDE719091F66B5F300DFE62C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4G8ZDPPAQQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DDE719051F66B5F300DFE62C /* Build configuration list for PBXProject "IBandPlayerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDE719011F66B5F300DFE62C;
+			productRefGroup = DDE7190B1F66B5F300DFE62C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDE719091F66B5F300DFE62C /* IBandPlayerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDE719081F66B5F300DFE62C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE7191D1F66B5F300DFE62C /* LaunchScreen.storyboard in Resources */,
+				DDBBFDCB1F6A8AD5007C92B5 /* QualityCell.xib in Resources */,
+				DDE7191A1F66B5F300DFE62C /* Assets.xcassets in Resources */,
+				DDE719181F66B5F300DFE62C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C2F05A713F1D58F0867A57E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IBandPlayerDemo/Pods-IBandPlayerDemo-resources.sh",
+				"${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/Resources/Shader.fsh",
+				"${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/Resources/Shader.vsh",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBandPlayerDemo/Pods-IBandPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E6335275EB8265F3F31C71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IBandPlayerDemo/Pods-IBandPlayerDemo-frameworks.sh",
+				"${PODS_ROOT}/IBandPlayerSDK/IBandPlayerSDK/IBandPlayerSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBandPlayerSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBandPlayerDemo/Pods-IBandPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF600AABF143FF4414A1AC5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IBandPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDE719061F66B5F300DFE62C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBBFDD11F6A8D47007C92B5 /* UIColor+Hex.m in Sources */,
+				DDBBFDCA1F6A8AD5007C92B5 /* QualityCell.m in Sources */,
+				DDBBFDC91F6A8AD5007C92B5 /* PlayerViewController.m in Sources */,
+				DDE719121F66B5F300DFE62C /* AppDelegate.m in Sources */,
+				DDE7190F1F66B5F300DFE62C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDE719161F66B5F300DFE62C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDE719171F66B5F300DFE62C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDE7191B1F66B5F300DFE62C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDE7191C1F66B5F300DFE62C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDE7191F1F66B5F300DFE62C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDE719201F66B5F300DFE62C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDE719221F66B5F300DFE62C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2C931F65A960F5664F154B /* Pods-IBandPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4G8ZDPPAQQ;
+				INFOPLIST_FILE = IBandPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IBand.IBandPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDE719231F66B5F300DFE62C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DE288AD596746340AF7823 /* Pods-IBandPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4G8ZDPPAQQ;
+				INFOPLIST_FILE = IBandPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IBand.IBandPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDE719051F66B5F300DFE62C /* Build configuration list for PBXProject "IBandPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE7191F1F66B5F300DFE62C /* Debug */,
+				DDE719201F66B5F300DFE62C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE719211F66B5F300DFE62C /* Build configuration list for PBXNativeTarget "IBandPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE719221F66B5F300DFE62C /* Debug */,
+				DDE719231F66B5F300DFE62C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDE719021F66B5F300DFE62C /* Project object */;
+}
